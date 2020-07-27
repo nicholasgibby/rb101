@@ -4,7 +4,7 @@ end
 
 def number?(obj)
   obj = obj.to_s unless obj.is_a?(String)
-  /\A[+-]?\d+(\.[\d]+)?\z/.match(obj)
+  /\A[+]?\d+(\.[\d]+)?\z/.match(obj)
 end
 
 prompt 'Welcome to Loan Calculator!'
